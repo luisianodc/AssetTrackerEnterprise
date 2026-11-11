@@ -8,17 +8,16 @@ bla bla
 - Internet access on first run to restore NuGet packages
 
 ## Run
-1. Extract the ZIP.
-2. Open `AssetTrackerEnterprise.sln` in Visual Studio or Rider.
-3. Restore NuGet packages.
-4. Set `src/AssetTrackerEnterprise` as the startup project.
-5. Run the project.
+
 
 Or use a terminal in the extracted folder:
 
 ```bash
-dotnet restore
-dotnet run --project src/AssetTrackerEnterprise
+git clone https://github.com/luisianodc/AssetTrackerEnterprise.git
+
+dotnet build
+
+dotnet run
 ```
 
 The SQLite database `assettracker.db` is created automatically in the application's working directory on first launch. Starter offices, two employees and demo users are inserted automatically.
